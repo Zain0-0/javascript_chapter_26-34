@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var currentDate = new Date();
+        var millisecondsSinceEpoch = currentDate.getTime();
+        var minutesSinceEpoch = Math.floor(millisecondsSinceEpoch / (1000 * 60));
+
+        var formattedDate = currentDate.toLocaleString();
+
+        document.write("<h2>Current Date:</h2>");
+        document.write("<p>" + formattedDate + "</p>");
+
+        document.write("<h2>Minutes since midnight, Jan. 1, 1970:</h2>");
+        document.write("<p>" + minutesSinceEpoch + " minutes</p>");
+
+        document.write("<h2>Milliseconds since midnight, Jan. 1, 1970:</h2>");
+        document.write("<p>" + millisecondsSinceEpoch + " milliseconds</p>");
+    </script>
+</body>
+</html>
